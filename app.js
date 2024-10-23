@@ -32,23 +32,3 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
-document.getElementById('contactForm').addEventListener('submit', function (e) {
-    e.preventDefault(); // Previene el envío normal del formulario
-
-    // Recoger los datos del formulario
-    const formData = new FormData(this);
-
-    // Enviar los datos con fetch al archivo PHP
-    fetch('send_email.php', {
-        method: 'POST',
-        body: formData
-    })
-    .then(response => response.text())
-    .then(data => {
-        document.getElementById('result').innerHTML = data; // Muestra el resultado
-    })
-    .catch(error => {
-        document.getElementById('result').innerHTML = 'Hubo un error al enviar el mensaje.';
-        console.error('Error:', error);
-    });
-});

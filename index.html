@@ -125,13 +125,24 @@
         <p><strong>Dirección: </strong>Estado #25 | piso 6 | Metro📍 Universidad de Chile</p>
         <p><strong>Teléfono: </strong> 📞+569 36767356</p>
         <p><strong>Email:</strong> 📩 alepodologiasalud@gmail.com</p>
-            <form action="send_email.php" method="POST">
-                <input type="text" name="name" placeholder="Tu nombre" required>
-                <input type="email" name="email" placeholder="Tu correo electrónico" required>
-                <textarea name="message" placeholder="Tu mensaje" required></textarea>
+
+        <!-- Formulario de contacto con Netlify -->
+        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+            <input type="hidden" name="form-name" value="contact">
+            <p>
+                <label>Nombre: <input type="text" name="name" required></label>
+            </p>
+            <p>
+                <label>Correo Electrónico: <input type="email" name="email" required></label>
+            </p>
+            <p>
+                <label>Mensaje: <textarea name="message" required></textarea></label>
+            </p>
+            <p>
                 <button type="submit">Enviar</button>
-            </form>
+            </p>
         </form>
+
         <p>&copy; 2024 Clínica de Podología Avanzada. Todos los derechos reservados.</p>
     </footer>
 </body>
