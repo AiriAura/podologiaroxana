@@ -1,0 +1,207 @@
+/* Reset de estilos básicos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica', sans-serif;
+    color: #2e4057;
+    background-color: #eef5f9;
+    line-height: 1.6;
+    overflow-x: hidden;
+}
+
+/* Estilo de cabecera y navegación */
+header {
+    background-color: #336699; /* Azul más suave */
+    color: #fff;
+    padding: 15px 30px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+header .logo {
+    font-size: 1.5em;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Playfair Display', serif; /* Letra elegante */
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 8px 12px;
+    font-size: 1em;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+header nav ul li a:hover {
+    background-color: #28577A; /* Azul oscuro para hover */
+    color: #fff;
+}
+
+/* Estilos para el Hero */
+.hero {
+    background-image: url('hero-background.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    text-align: center;
+    position: relative;
+}
+
+.hero::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 1;
+}
+
+.hero-content {
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero h1 {
+    font-size: 3.5em;
+    margin-bottom: 10px;
+    line-height: 1.2;
+    font-family: 'Playfair Display', serif; /* Letra elegante */
+    color: #d4e9f9; /* Azul claro para el título */
+}
+
+.hero p {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+}
+
+.hero .btn {
+    padding: 12px 30px;
+    background-color: #2A9DF4; /* Botón azul más brillante */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background 0.3s;
+}
+
+.hero .btn:hover {
+    background-color: #1B6FA1; /* Azul más oscuro para hover */
+}
+
+/* Secciones comunes */
+.section {
+    padding: 60px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.section h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #1b3b5f; /* Azul oscuro para los títulos */
+    font-family: 'Playfair Display', serif; /* Letra elegante */
+}
+
+.services-grid,
+.testimonials-grid,
+.gallery-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service,
+.testimonial,
+.gallery-item {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.service img,
+.gallery-item img {
+    max-width: 100%;
+    border-radius: 8px;
+}
+
+.service h3,
+.testimonial h4 {
+    margin-top: 15px;
+    font-size: 1.5em;
+    color: #28577A; /* Texto en azul oscuro */
+}
+
+.gallery-item p {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Sección de contacto */
+.footer {
+    background-color: #28577A;
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.footer p {
+    margin: 10px 0;
+}
+
+footer form {
+    margin: 20px 0;
+    max-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer form input,
+footer form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    border: none;
+    background-color: #eef5f9; /* Fondo claro */
+}
+
+footer form button {
+    background-color: #2A9DF4;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+footer form button:hover {
+    background-color: #1B6FA1;
+}
