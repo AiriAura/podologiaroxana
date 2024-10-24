@@ -55,29 +55,6 @@
         </div>
     </section>
 
-    <!-- Sección Tratamientos Podológicos -->
-    <section id="tratamientos" class="section">
-        <h2>Tratamientos Podológicos</h2>
-        <div class="services-grid">
-            <div class="service">
-                <h3>Onicomicosis (Hongos en las uñas)</h3>
-                <p>Tratamiento especializado para eliminar los hongos en las uñas, mejorando su apariencia y salud.</p>
-            </div>
-            <div class="service">
-                <h3>Callosidades</h3>
-                <p>Eliminamos callosidades y durezas de forma segura para mejorar la comodidad al caminar.</p>
-            </div>
-            <div class="service">
-                <h3>Uñas Encarnadas</h3>
-                <p>Soluciones quirúrgicas y no quirúrgicas para tratar las uñas encarnadas de manera eficaz.</p>
-            </div>
-            <div class="service">
-                <h3>Pie Diabético</h3>
-                <p>Atención especializada para prevenir y tratar complicaciones derivadas del pie diabético.</p>
-            </div>
-        </div>
-    </section>
-
     <!-- Sección Trabajos Realizados -->
     <section id="trabajos" class="section">
         <h2>Trabajos Realizados</h2>
@@ -125,10 +102,13 @@
         <p><strong>Dirección: </strong>Estado #25 | piso 6 | Metro📍 Universidad de Chile</p>
         <p><strong>Teléfono: </strong> 📞+569 36767356</p>
         <p><strong>Email:</strong> 📩 alepodologiasalud@gmail.com</p>
-
-        <!-- Formulario de contacto con Netlify -->
-        <form name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
+        
+        <!-- Formulario de contacto Netlify -->
+        <form id="contactForm" name="contact" method="POST" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact">
+            <p style="display:none;">
+                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
+            </p>
             <p>
                 <label>Nombre: <input type="text" name="name" required></label>
             </p>
@@ -141,6 +121,7 @@
             <p>
                 <button type="submit">Enviar</button>
             </p>
+            <div id="result"></div> <!-- Aquí se mostrará el mensaje de éxito o error -->
         </form>
 
         <p>&copy; 2024 Clínica de Podología Avanzada. Todos los derechos reservados.</p>
