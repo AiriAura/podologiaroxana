@@ -5,17 +5,162 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clínica de Podología Avanzada</title>
     <link rel="stylesheet" href="podologia.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <script defer src="app.js"></script>
-    <!-- Incluir Font Awesome en la sección <head> -->
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Estilos generales */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
 
-<!-- Enlace a WhatsApp con Logo -->
-<p>
-    <a href="https://wa.me/56936767356?text=Hola%20me%20interesa%20más%20sobre%20los%20servicios%20de%20podología." target="_blank" class="whatsapp-link">
-        <img src="whatsapp-logo.svg" alt="WhatsApp" style="width: 24px; height: 24px; vertical-align: middle;">
-        Contáctanos por WhatsApp
-    </a>
-</p>
+        header {
+            position: sticky;
+            top: 0;
+            width: 100%;
+            background-color: rgba(221, 176, 176, 0.9);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            padding: 1rem 2rem;
+            display: inline-block;
+        }
+
+        nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 1.5rem;
+            padding-right: 2rem;
+        }
+
+        nav ul li {
+            display: inline;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: 600;
+            padding: 1rem 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            color: #ff6b6b;
+        }
+
+        /* Hero */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            position: relative;
+            overflow: hidden;
+            background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://img.freepik.com/foto-gratis/proceso-pedicura-pedicura-salon-casa-tratamiento-cuidado-pies-unas-proceso-pedicura-profesional-maestro-guantes-azules-hace-pedicura_343596-1589.jpg?t=st=1729733893~exp=1729737493~hmac=37f975c5001acdda53d443d6e5c6ec19c40af770fd33682738af83f761523004&w=740') center/cover no-repeat;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: #fff;
+            z-index: 1;
+            animation: fadeInUp 1s ease;
+        }
+
+        .hero-title {
+            font-family: 'Lobster', cursive;
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .hero-subtitle {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .btn {
+            padding: 0.75rem 2rem;
+            background-color: #ff6b6b;
+            color: #fff;
+            border-radius: 30px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #ff4c4c;
+        }
+
+        /* Servicios y secciones */
+        .section {
+            padding: 4rem 2rem;
+            text-align: center;
+            background-color: #fff;
+        }
+
+        .services-grid, .gallery-grid, .store-grid, .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service, .gallery-item, .product, .testimonial {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            padding: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .service img, .gallery-item img, .product img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-bottom: 1rem;
+        }
+
+        .service:hover, .gallery-item:hover, .product:hover, .testimonial:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Footer */
+        .footer {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #ff6b6b;
+            text-decoration: none;
+        }
+
+        /* Animaciones */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+    </style>
 </head>
 <body>
     <!-- Encabezado -->
@@ -24,173 +169,35 @@
         <nav>
             <ul>
                 <li><a href="#inicio">Inicio</a></li>
-                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="servicios.html">Servicios</a></li>
                 <li><a href="#tratamientos">Tratamientos</a></li>
                 <li><a href="#nosotros">Nosotros</a></li>
                 <li><a href="#testimonios">Testimonios</a></li>
                 <li><a href="#trabajos">Trabajos Realizados</a></li>
                 <li><a href="#tienda">Tienda</a></li>
                 <li><a href="#contacto">Contacto</a></li>
-                
             </ul>
         </nav>
     </header>
 
-   <!-- Sección Hero -->
-<section id="inicio" class="hero">
-    <div class="hero-content">
-        <h1 class="hero-title">Cuidamos de tus pies</h1>
-        <p class="hero-subtitle">Profesionales en podología y salud del pie</p>
-        <a href="#servicios" class="btn">Descubre nuestros servicios</a>
-    </div>
-    <div class="background-images">
-        <img src="https://img.freepik.com/foto-gratis/proceso-pedicura-pedicura-salon-casa-tratamiento-cuidado-pies-unas-proceso-pedicura-profesional-maestro-guantes-azules-hace-pedicura_343596-1589.jpg?t=st=1729733893~exp=1729737493~hmac=37f975c5001acdda53d443d6e5c6ec19c40af770fd33682738af83f761523004&w=740" alt="Tratamiento 1" class="active">
-        <img src="https://img.freepik.com/fotos-premium/mujer-tratamiento-pedicura-moderno-salon-belleza_473712-3210.jpg?w=740" alt="Tratamiento 2">
-        <img src="https://img.freepik.com/fotos-premium/maestro-pedicura-profesional-haciendo-pedicura-salon_199620-2491.jpg?w=740" alt="Tratamiento 3">
-    </div>
-</section>
-
-    <!-- Sección Servicios -->
-    <section id="servicios" class="section">
-        <h2>Nuestros Servicios</h2>
-        <div class="services-grid">
-            <div class="service">
-                <img src="tratamiento-1.jpg" alt="Tratamiento Podológico">
-                <h3>Tratamientos Podológicos</h3>
-                <p>Ofrecemos tratamientos para el cuidado integral de tus pies.</p>
-            </div>
-            <div class="service">
-                <img src="cirugia-pie.jpg" alt="Cirugía de Pie">
-                <h3>Cirugía de Pie</h3>
-                <p>Intervenciones quirúrgicas para corregir problemas graves.</p>
-            </div>
-            <div class="service">
-                <img src="ortopedia.jpg" alt="Ortopedia">
-                <h3>Ortopedia</h3>
-                <p>Plantillas personalizadas y más para mejorar tu bienestar.</p>
-            </div>
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Cuidamos de tus pies</h1>
+            <p class="hero-subtitle">Profesionales en podología y salud del pie</p>
+            <a href="#servicios" class="btn">Descubre nuestros servicios</a>
         </div>
     </section>
 
-    <!-- Sección Trabajos Realizados -->
-    <section id="trabajos" class="section">
-        <h2>Trabajos Realizados</h2>
-        <p>En esta sección podrás ver ejemplos de los tratamientos realizados en nuestra clínica:</p>
-        <div class="gallery-grid">
-            <div class="gallery-item">
-                <img src="trabajo1.jpg" alt="Tratamiento de Uñas Encarnadas">
-                <p>Antes y después de un tratamiento de uñas encarnadas.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="trabajo2.jpg" alt="Eliminación de Callosidades">
-                <p>Eliminación de callosidades y mejoría en el confort del paciente.</p>
-            </div>
-            <div class="gallery-item">
-                <img src="trabajo3.jpg" alt="Tratamiento de Onicomicosis">
-                <p>Recuperación completa de una uña afectada por onicomicosis.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Sección Sobre Nosotros -->
-    <section id="nosotros" class="section">
-        <h2>Sobre Nosotros</h2>
-        <p>Somos una clínica con más de 20 años de experiencia en el cuidado de los pies. Nuestro equipo de podólogos está altamente cualificado y utiliza la última tecnología para ofrecer tratamientos efectivos.</p>
-    </section>
-
-    <!-- Sección Testimonios -->
-    <section id="testimonios" class="section">
-        <h2>Testimonios de Clientes</h2>
-        <div class="testimonials-grid">
-            <div class="testimonial">
-                <p>"El equipo fue increíble y solucionaron mi problema de fascitis plantar rápidamente."</p>
-                <h4>- Juan Pérez</h4>
-            </div>
-            <div class="testimonial">
-                <p>"Mi experiencia fue muy positiva. Recomiendo a todos cuidar sus pies en esta clínica."</p>
-                <h4>- Ana Gómez</h4>
-            </div>
-        </div>
-    </section>
-    <!-- Sección Tienda -->
-<section id="tienda" class="section">
-    <h2>Tienda</h2>
-    <p>Descubre nuestros productos para el cuidado de tus pies:</p>
-    <div class="store-grid">
-        <div class="product" data-id="1">
-            <img src="producto1.jpg" alt="Producto 1">
-            <h3>Crema Hidratante</h3>
-            <p>Crema especial para el cuidado e hidratación de los pies.</p>
-            <p class="price">Precio: $15.000</p>
-            <button class="btn add-to-cart">Añadir al carrito</button>
-        </div>
-        <div class="product" data-id="2">
-            <img src="producto2.jpg" alt="Producto 2">
-            <h3>Plantillas Ortopédicas</h3>
-            <p>Plantillas personalizadas para mejorar tu comodidad al caminar.</p>
-            <p class="price">Precio: $30.000</p>
-            <button class="btn add-to-cart">Añadir al carrito</button>
-        </div>
-        <div class="product" data-id="3">
-            <img src="producto3.jpg" alt="Producto 3">
-            <h3>Kit de Pedicura</h3>
-            <p>Todo lo necesario para mantener tus pies cuidados en casa.</p>
-            <p class="price">Precio: $20.000</p>
-            <button class="btn add-to-cart">Añadir al carrito</button>
-        </div>
-        <div class="product" data-id="4">
-            <img src="producto4.jpg" alt="Producto 4">
-            <h3>Sueros Anti-Durezas</h3>
-            <p>Sérum para eliminar durezas y mejorar la piel de los pies.</p>
-            <p class="price">Precio: $18.000</p>
-            <button class="btn add-to-cart">Añadir al carrito</button>
-        </div>
-    </div>
-    <div id="cart" class="cart">
-        <h2>Carrito de Compras</h2>
-        <div id="cart-items"></div>
-        <p id="total-price">Total: $0</p>
-        <button id="clear-cart">Vaciar Carrito</button>
-    </div>
-</section>
-
+    <!-- Secciones adicionales aquí -->
 
     <!-- Sección Contacto -->
     <footer id="contacto" class="footer">
         <h2>Contacto</h2>
-        <p><strong>Dirección: </strong>Estado #25 | piso 6 | Metro📍 Universidad de Chile</p>
-        <p><strong>Teléfono: </strong> 📞+569 36767356</p>
+        <p><strong>Dirección:</strong> Estado #25 | piso 6 | Metro📍 Universidad de Chile</p>
+        <p><strong>Teléfono:</strong> 📞+569 36767356</p>
         <p><strong>Email:</strong> 📩 alepodologiasalud@gmail.com</p>
-
-          <!-- Enlace a WhatsApp -->
-        <p>
-            <a href="https://wa.me/56936767356?text=Hola%20me%20interesa%20más%20sobre%20los%20servicios%20de%20podología." target="_blank" class="whatsapp-link">
-                Contáctanos por WhatsApp
-            </a>
-        </p>
-
-        
-        <!-- Formulario de contacto Netlify -->
-        <form id="contactForm" name="contact" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
-            <input type="hidden" name="form-name" value="contact">
-            <p style="display:none;">
-                <label>Don’t fill this out if you're human: <input name="bot-field"></label>
-            </p>
-            <p>
-                <label>Nombre: <input type="text" name="name" required></label>
-            </p>
-            <p>
-                <label>Correo Electrónico: <input type="email" name="email" required></label>
-            </p>
-            <p>
-                <label>Mensaje: <textarea name="message" required></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Enviar</button>
-            </p>
-            <div id="result"></div>
-        </form>
-
+        <a href="https://wa.me/56936767356?text=Hola%20me%20interesa%20más%20sobre%20los%20servicios%20de%20podología." target="_blank" class="btn">Contáctanos por WhatsApp</a>
         <p>&copy; 2024 Clínica de Podología Avanzada. Todos los derechos reservados.</p>
     </footer>
 </body>

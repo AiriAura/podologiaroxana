@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Podología</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@400;600&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        /* Sección de Servicios */
+        .section {
+            padding: 4rem 2rem;
+            background-color: #fff;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            position: relative;
+        }
+
+        .service img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+
+        .service:hover img {
+            transform: scale(1.05);
+        }
+
+        .service:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-info {
+            padding: 1.5rem;
+        }
+
+        .service-info h3 {
+            margin-bottom: 1rem;
+            color: #ff6b6b;
+            font-size: 1.5rem;
+        }
+
+        .service-info p {
+            color: #666;
+        }
+
+        .btn-service {
+            display: inline-block;
+            margin-top: 1rem;
+            padding: 0.75rem 1.5rem;
+            background-color: #ff6b6b;
+            color: #fff;
+            border-radius: 30px;
+            text-decoration: none;
+            font-weight: 600;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn-service:hover {
+            background-color: #ff4c4c;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- Sección de Servicios -->
+    <section class="section" id="servicios">
+        <h1>Nuestros Servicios</h1>
+        <h2>Cuidado Integral para Tus Pies</h2>
+        <div class="services-grid">
+
+            <div class="service">
+                <img src="https://img.freepik.com/fotos-premium/profesional-masculino-limando-una-mujer-cerca-unas-tratamiento-pedicura-salon_199620-2227.jpg" alt="Tratamiento Podológico General">
+                <div class="service-info">
+                    <h3>Tratamientos Podológicos Generales</h3>
+                    <p>Evaluación y tratamiento de problemas comunes en los pies como callosidades, durezas, y más.</p>
+                    <a href="#" class="btn-service">Ver más</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="https://img.freepik.com/fotos-premium/pies-mujer-antes-despues-pedicura-salon-belleza_199620-2460.jpg" alt="Onicomicosis">
+                <div class="service-info">
+                    <h3>Tratamiento de Onicomicosis</h3>
+                    <p>Soluciones efectivas para la recuperación de uñas afectadas por hongos.</p>
+                    <a href="#" class="btn-service">Ver más</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="https://img.freepik.com/foto-gratis/primer-plano-feminino-proceso-pedicura-pies-limpieza-cosmetologa-uso-esmalte_169016-18187.jpg?w=740&t=st=1729733893~exp=1729737493~hmac=1cb0a7346813b12c3f4e08f66edb4102d177546d66298f02b5d7b3e0fc1e333a" alt="Pedicura Avanzada">
+                <div class="service-info">
+                    <h3>Pedicura Avanzada</h3>
+                    <p>Cuidado estético y preventivo de los pies, con técnicas avanzadas para mejorar la salud de tus uñas.</p>
+                    <a href="#" class="btn-service">Ver más</a>
+                </div>
+            </div>
+
+            <div class="service">
+                <img src="https://img.freepik.com/fotos-premium/doctor-tratamiento-pies-hombre-mujer-ortopedista-clinica_199620-2640.jpg?w=740" alt="Cirugía Podológica">
+                <div class="service-info">
+                    <h3>Cirugía Podológica</h3>
+                    <p>Intervenciones quirúrgicas mínimamente invasivas para corregir problemas graves en los pies.</p>
+                    <a href="#" class="btn-service">Ver más</a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>

@@ -1,311 +1,311 @@
-/* Reset de estilos básicos */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    /* Reset de estilos básicos */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: 'Helvetica', sans-serif;
-    color: #2e4057;
-    background-color: #eef5f9;
-    line-height: 1.6;
-    overflow-x: hidden;
-}
+    body {
+        font-family: 'Helvetica', sans-serif;
+        color: #2e4057;
+        background-color: #eef5f9;
+        line-height: 1.6;
+        overflow-x: hidden;
+    }
 
-/* Estilo de cabecera y navegación */
-header {
-    background-color: #336699; /* Azul más suave */
-    color: #fff;
-    padding: 15px 30px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    z-index: 1000;
-}
+    /* Estilo de cabecera y navegación */
+    header {
+        background-color: #336699; /* Azul más suave */
+        color: #fff;
+        padding: 15px 30px;
+        position: fixed;
+        top: 0;
+        width: 100%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        z-index: 1000;
+    }
 
-header .logo {
-    font-size: 1.5em;
-    font-weight: bold;
-    letter-spacing: 1px;
-    font-family: 'Playfair Display', serif; /* Letra elegante */
-}
+    header .logo {
+        font-size: 1.5em;
+        font-weight: bold;
+        letter-spacing: 1px;
+        font-family: 'Playfair Display', serif; /* Letra elegante */
+    }
 
-header nav ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    align-items: center;
-}
+    header nav ul {
+        list-style: none;
+        display: flex;
+        gap: 15px;
+        align-items: center;
+    }
 
-header nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 8px 12px;
-    font-size: 1em;
-    border-radius: 5px;
-    transition: background 0.3s, color 0.3s;
-}
+    header nav ul li a {
+        color: white;
+        text-decoration: none;
+        padding: 8px 12px;
+        font-size: 1em;
+        border-radius: 5px;
+        transition: background 0.3s, color 0.3s;
+    }
 
-header nav ul li a:hover {
-    background-color: #28577A; /* Azul oscuro para hover */
-    color: #fff;
-}
+    header nav ul li a:hover {
+        background-color: #28577A; /* Azul oscuro para hover */
+        color: #fff;
+    }
 
-/* Estilos para el Hero */
-.hero {
-    display: flex; /* Usar flexbox para alinear las imágenes en fila */
-    align-items: center; /* Centrar verticalmente */
-    justify-content: center; /* Centrar horizontalmente */
-    height: 80vh; /* Altura de la sección hero */
-    overflow: hidden; /* Oculta cualquier contenido que se desborde */
-}
+    /* Estilos para el Hero */
+    .hero {
+        display: flex; /* Usar flexbox para alinear las imágenes en fila */
+        align-items: center; /* Centrar verticalmente */
+        justify-content: center; /* Centrar horizontalmente */
+        height: 80vh; /* Altura de la sección hero */
+        overflow: hidden; /* Oculta cualquier contenido que se desborde */
+    }
 
-.background-images {
-    display: flex; /* Usar flexbox para las imágenes */
-    width: 100%; /* Ancho completo del contenedor */
-    height: 100%; /* Altura completa del contenedor */
-}
+    .background-images {
+        display: flex; /* Usar flexbox para las imágenes */
+        width: 100%; /* Ancho completo del contenedor */
+        height: 100%; /* Altura completa del contenedor */
+    }
 
-.background-images img {
-    flex: 1; /* Cada imagen ocupa el mismo espacio */
-    height: auto; /* Mantiene la proporción automáticamente */
-    object-fit: cover; /* Cubre el espacio del contenedor sin distorsión */
-    max-height: 80vh; /* Limitar la altura máxima de las imágenes */
-}
+    .background-images img {
+        flex: 1; /* Cada imagen ocupa el mismo espacio */
+        height: auto; /* Mantiene la proporción automáticamente */
+        object-fit: cover; /* Cubre el espacio del contenedor sin distorsión */
+        max-height: 80vh; /* Limitar la altura máxima de las imágenes */
+    }
 
-.hero {
-    position: relative;
-    color: white; /* Color de texto por defecto */
-}
+    .hero {
+        position: relative;
+        color: white; /* Color de texto por defecto */
+    }
 
-.hero-content {
-    position: absolute; /* Para superponer el contenido sobre las imágenes de fondo */
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    z-index: 2; /* Asegura que el contenido esté sobre las imágenes */
-}
+    .hero-content {
+        position: absolute; /* Para superponer el contenido sobre las imágenes de fondo */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+        z-index: 2; /* Asegura que el contenido esté sobre las imágenes */
+    }
 
-.hero-title {
-    font-family: 'Arial Black', sans-serif; /* Fuente llamativa */
-    font-size: 4rem; /* Tamaño de fuente grande */
-    color: #f7e291; /* Color del título */
-    margin: 0;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
-}
+    .hero-title {
+        font-family: 'Arial Black', sans-serif; /* Fuente llamativa */
+        font-size: 4rem; /* Tamaño de fuente grande */
+        color: #f7e291; /* Color del título */
+        margin: 0;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
+    }
 
-.hero-subtitle {
-    font-size: 1.5rem; /* Tamaño de fuente más grande para el párrafo */
-    margin: 10px 0 20px; /* Espaciado superior e inferior */
-    color: #f7e291; /* Un color dorado para que resalte */
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para legibilidad */
-}
+    .hero-subtitle {
+        font-size: 1.5rem; /* Tamaño de fuente más grande para el párrafo */
+        margin: 10px 0 20px; /* Espaciado superior e inferior */
+        color: #f7e291; /* Un color dorado para que resalte */
+        text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para legibilidad */
+    }
 
-.btn {
-    padding: 10px 20px;
-    background-color: #007BFF; /* Color del botón */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 1rem;
-    transition: background-color 0.3s ease; /* Efecto de transición */
-}
+    .btn {
+        padding: 10px 20px;
+        background-color: #007BFF; /* Color del botón */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-size: 1rem;
+        transition: background-color 0.3s ease; /* Efecto de transición */
+    }
 
-.btn:hover {
-    background-color: #0056b3; /* Color al pasar el ratón por encima */
-}
-.background-images {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden; /* Asegúrate de que las imágenes no se desborden */
-}
+    .btn:hover {
+        background-color: #0056b3; /* Color al pasar el ratón por encima */
+    }
+    .background-images {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden; /* Asegúrate de que las imágenes no se desborden */
+    }
 
-.background-images img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    object-fit: cover; /* Mantiene la proporción de las imágenes */
-    opacity: 0; /* Las imágenes comienzan invisibles */
-    transition: opacity 1s ease-in-out; /* Transición suave para la opacidad */
-}
+    .background-images img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; /* Mantiene la proporción de las imágenes */
+        opacity: 0; /* Las imágenes comienzan invisibles */
+        transition: opacity 1s ease-in-out; /* Transición suave para la opacidad */
+    }
 
-.background-images img.active {
-    opacity: 1; /* Solo la imagen activa es visible */
-}
+    .background-images img.active {
+        opacity: 1; /* Solo la imagen activa es visible */
+    }
 
-/* Secciones comunes */
-.section {
-    padding: 60px 20px;
-    max-width: 1100px;
-    margin: 0 auto;
-    text-align: center;
-}
+    /* Secciones comunes */
+    .section {
+        padding: 60px 20px;
+        max-width: 1100px;
+        margin: 0 auto;
+        text-align: center;
+    }
 
-.section h2 {
-    font-size: 2.5em;
-    margin-bottom: 40px;
-    color: #1b3b5f; /* Azul oscuro para los títulos */
-    font-family: 'Playfair Display', serif; /* Letra elegante */
-}
+    .section h2 {
+        font-size: 2.5em;
+        margin-bottom: 40px;
+        color: #1b3b5f; /* Azul oscuro para los títulos */
+        font-family: 'Playfair Display', serif; /* Letra elegante */
+    }
 
-.services-grid,
-.testimonials-grid,
-.gallery-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-}
+    .services-grid,
+    .testimonials-grid,
+    .gallery-grid {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
 
-.service,
-.testimonial,
-.gallery-item {
-    background-color: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
+    .service,
+    .testimonial,
+    .gallery-item {
+        background-color: white;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
 
-.service img,
-.gallery-item img {
-    max-width: 100%;
-    border-radius: 8px;
-}
+    .service img,
+    .gallery-item img {
+        max-width: 100%;
+        border-radius: 8px;
+    }
 
-.service h3,
-.testimonial h4 {
-    margin-top: 15px;
-    font-size: 1.5em;
-    color: #28577A; /* Texto en azul oscuro */
-}
+    .service h3,
+    .testimonial h4 {
+        margin-top: 15px;
+        font-size: 1.5em;
+        color: #28577A; /* Texto en azul oscuro */
+    }
 
-.gallery-item p {
-    margin-top: 10px;
-    font-size: 0.9em;
-    color: #777;
-}
+    .gallery-item p {
+        margin-top: 10px;
+        font-size: 0.9em;
+        color: #777;
+    }
 
-/* Sección de contacto */
-.footer {
-    background-color: #28577A;
-    color: white;
-    padding: 60px 20px;
-    text-align: center;
-}
+    /* Sección de contacto */
+    .footer {
+        background-color: #28577A;
+        color: white;
+        padding: 60px 20px;
+        text-align: center;
+    }
 
-.footer p {
-    margin: 10px 0;
-}
+    .footer p {
+        margin: 10px 0;
+    }
 
-footer form {
-    margin: 20px 0;
-    max-width: 400px;
-    margin-left: auto;
-    margin-right: auto;
-}
+    footer form {
+        margin: 20px 0;
+        max-width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
 
-footer form input,
-footer form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 15px;
-    border-radius: 5px;
-    border: none;
-    background-color: #eef5f9; /* Fondo claro */
-}
+    footer form input,
+    footer form textarea {
+        width: 100%;
+        padding: 10px;
+        margin-bottom: 15px;
+        border-radius: 5px;
+        border: none;
+        background-color: #eef5f9; /* Fondo claro */
+    }
 
-footer form button {
-    background-color: #2A9DF4;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-    border-radius: 5px;
-    transition: background 0.3s;
-}
+    footer form button {
+        background-color: #2A9DF4;
+        color: white;
+        padding: 10px;
+        border: none;
+        cursor: pointer;
+        border-radius: 5px;
+        transition: background 0.3s;
+    }
 
-footer form button:hover {
-    background-color: #1B6FA1;
-}
+    footer form button:hover {
+        background-color: #1B6FA1;
+    }
 
-.whatsapp-link {
-    display: inline-flex; /* Cambia a inline-flex para alinear el ícono y el texto */
-    align-items: center; /* Alinea verticalmente el ícono y el texto */
-    margin-top: 20px;
-    padding: 10px 15px; /* Ajusta el padding si es necesario */
-    background-color: #25D366; /* Color de WhatsApp */
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-weight: bold;
-    transition: background 0.3s;
-}
+    .whatsapp-link {
+        display: inline-flex; /* Cambia a inline-flex para alinear el ícono y el texto */
+        align-items: center; /* Alinea verticalmente el ícono y el texto */
+        margin-top: 20px;
+        padding: 10px 15px; /* Ajusta el padding si es necesario */
+        background-color: #25D366; /* Color de WhatsApp */
+        color: white;
+        text-decoration: none;
+        border-radius: 5px;
+        font-weight: bold;
+        transition: background 0.3s;
+    }
 
-.whatsapp-link img {
-    margin-right: 8px; /* Espacio entre el ícono y el texto */
-}
+    .whatsapp-link img {
+        margin-right: 8px; /* Espacio entre el ícono y el texto */
+    }
 
-.whatsapp-link:hover {
-    background-color: #128C7E; /* Color más oscuro al pasar el ratón */
-}
-.store-grid {
-    display: flex;                /* Usamos flexbox para alinear los productos horizontalmente */
-    flex-wrap: wrap;            /* Permite que los productos se envuelvan en caso de que no quepan en una sola fila */
-    justify-content: space-around; /* Espaciado uniforme entre los productos */
-    margin: 20px 0;             /* Espacio vertical alrededor de la sección */
-}
+    .whatsapp-link:hover {
+        background-color: #128C7E; /* Color más oscuro al pasar el ratón */
+    }
+    .store-grid {
+        display: flex;                /* Usamos flexbox para alinear los productos horizontalmente */
+        flex-wrap: wrap;            /* Permite que los productos se envuelvan en caso de que no quepan en una sola fila */
+        justify-content: space-around; /* Espaciado uniforme entre los productos */
+        margin: 20px 0;             /* Espacio vertical alrededor de la sección */
+    }
 
-.product {
-    flex: 1 1 200px;            /* Los productos se expanden para ocupar el espacio disponible, con un ancho base de 200px */
-    margin: 10px;               /* Espacio alrededor de cada producto */
-    text-align: center;         /* Centramos el texto dentro de cada producto */
-    border: 1px solid #ccc;     /* Borde ligero alrededor del producto */
-    border-radius: 8px;         /* Esquinas redondeadas para el producto */
-    padding: 15px;              /* Espacio interno dentro de cada producto */
-    background-color: #f9f9f9;  /* Color de fondo ligero para los productos */
-}
+    .product {
+        flex: 1 1 200px;            /* Los productos se expanden para ocupar el espacio disponible, con un ancho base de 200px */
+        margin: 10px;               /* Espacio alrededor de cada producto */
+        text-align: center;         /* Centramos el texto dentro de cada producto */
+        border: 1px solid #ccc;     /* Borde ligero alrededor del producto */
+        border-radius: 8px;         /* Esquinas redondeadas para el producto */
+        padding: 15px;              /* Espacio interno dentro de cada producto */
+        background-color: #f9f9f9;  /* Color de fondo ligero para los productos */
+    }
 
-.product img {
-    max-width: 100%;            /* Aseguramos que las imágenes no desborden su contenedor */
-    height: auto;               /* Mantiene la relación de aspecto */
-    border-radius: 8px;         /* Esquinas redondeadas para las imágenes */
-}
-.cart {
-    margin-top: 30px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    padding: 20px;
-    background-color: #f9f9f9;
-}
+    .product img {
+        max-width: 100%;            /* Aseguramos que las imágenes no desborden su contenedor */
+        height: auto;               /* Mantiene la relación de aspecto */
+        border-radius: 8px;         /* Esquinas redondeadas para las imágenes */
+    }
+    .cart {
+        margin-top: 30px;
+        border: 1px solid #ccc;
+        border-radius: 8px;
+        padding: 20px;
+        background-color: #f9f9f9;
+    }
 
-.cart-item {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0;
-}
+    .cart-item {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 0;
+    }
 
-.cart-item h3 {
-    margin: 0;
-}
+    .cart-item h3 {
+        margin: 0;
+    }
 
-#clear-cart {
-    background-color: red;
-    color: white;
-    border: none;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-}
+    #clear-cart {
+        background-color: red;
+        color: white;
+        border: none;
+        padding: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
 
-#clear-cart:hover {
-    background-color: darkred;
-}
+    #clear-cart:hover {
+        background-color: darkred;
+    }
