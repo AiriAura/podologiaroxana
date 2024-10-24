@@ -32,3 +32,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+document.addEventListener("DOMContentLoaded", function () {
+    const images = document.querySelectorAll(".background-images img");
+    let currentIndex = 0;
+
+    // Función para mostrar la imagen actual
+    function showCurrentImage() {
+        images[currentIndex].classList.remove("active"); // Oculta la imagen actual
+        currentIndex = (currentIndex + 1) % images.length; // Calcula el índice de la siguiente imagen
+        images[currentIndex].classList.add("active"); // Muestra la siguiente imagen
+    }
+
+    // Cambia la imagen cada 5 segundos
+    setInterval(showCurrentImage, 5000);
+});

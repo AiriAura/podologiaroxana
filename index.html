@@ -6,6 +6,16 @@
     <title>Clínica de Podología Avanzada</title>
     <link rel="stylesheet" href="podologia.css">
     <script defer src="app.js"></script>
+    <!-- Incluir Font Awesome en la sección <head> -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+<!-- Enlace a WhatsApp con Logo -->
+<p>
+    <a href="https://wa.me/56936767356?text=Hola%20me%20interesa%20más%20sobre%20los%20servicios%20de%20podología." target="_blank" class="whatsapp-link">
+        <img src="whatsapp-logo.svg" alt="WhatsApp" style="width: 24px; height: 24px; vertical-align: middle;">
+        Contáctanos por WhatsApp
+    </a>
+</p>
 </head>
 <body>
     <!-- Encabezado -->
@@ -25,13 +35,18 @@
     </header>
 
     <!-- Sección Hero -->
-    <section id="inicio" class="hero">
-        <div class="hero-content">
-            <h1>Cuidamos de tus pies</h1>
-            <p>Profesionales en podología y salud del pie</p>
-            <a href="#servicios" class="btn">Descubre nuestros servicios</a>
-        </div>
-    </section>
+<section id="inicio" class="hero">
+    <div class="hero-content">
+        <h1>Cuidamos de tus pies</h1>
+        <p>Profesionales en podología y salud del pie</p>
+        <a href="#servicios" class="btn">Descubre nuestros servicios</a>
+    </div>
+    <div class="background-images">
+        <img src="https://img.freepik.com/foto-gratis/proceso-pedicura-pedicura-salon-casa-tratamiento-cuidado-pies-unas-proceso-pedicura-profesional-maestro-guantes-azules-hace-pedicura_343596-1589.jpg?t=st=1729733893~exp=1729737493~hmac=37f975c5001acdda53d443d6e5c6ec19c40af770fd33682738af83f761523004&w=740" alt="Tratamiento 1" class="active">
+        <img src="https://img.freepik.com/fotos-premium/mujer-tratamiento-pedicura-moderno-salon-belleza_473712-3210.jpg?w=740" alt="Tratamiento 2">
+        <img src="https://img.freepik.com/fotos-premium/maestro-pedicura-profesional-haciendo-pedicura-salon_199620-2491.jpg?w=740" alt="Tratamiento 3">
+    </div>
+</section>
 
     <!-- Sección Servicios -->
     <section id="servicios" class="section">
@@ -103,6 +118,14 @@
         <p><strong>Teléfono: </strong> 📞+569 36767356</p>
         <p><strong>Email:</strong> 📩 alepodologiasalud@gmail.com</p>
 
+          <!-- Enlace a WhatsApp -->
+        <p>
+            <a href="https://wa.me/56936767356?text=Hola%20me%20interesa%20más%20sobre%20los%20servicios%20de%20podología." target="_blank" class="whatsapp-link">
+                Contáctanos por WhatsApp
+            </a>
+        </p>
+
+        
         <!-- Formulario de contacto Netlify -->
         <form id="contactForm" name="contact" method="POST" action="/gracias.html" data-netlify="true" netlify-honeypot="bot-field">
             <input type="hidden" name="form-name" value="contact">

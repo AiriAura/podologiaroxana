@@ -5,50 +5,116 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gracias por Contactarnos</title>
     <style>
+        /* Reset de estilos básicos */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
-            font-family: Arial, sans-serif;
-            background-color: #f4f4f4;
-            color: #333;
+            font-family: 'Helvetica', sans-serif;
+            color: #2e4057;
+            background-color: #eef5f9;
+            line-height: 1.6;
+            overflow-x: hidden;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 100vh;
-            margin: 0;
         }
 
         .thank-you-container {
             background-color: #fff;
             padding: 20px;
             border-radius: 8px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
             text-align: center;
         }
 
         h1 {
             color: #4CAF50;
+            font-size: 2.5em; /* Tamaño ajustado para combinar con el diseño general */
+            font-family: 'Playfair Display', serif; /* Letra elegante */
         }
 
         p {
-            font-size: 18px;
+            font-size: 1.2em; /* Tamaño ajustado */
             margin: 10px 0;
+            color: #555; /* Color de texto más suave */
         }
 
         a {
             display: inline-block;
             margin-top: 20px;
             padding: 10px 20px;
-            background-color: #4CAF50;
+            background-color: #2A9DF4; /* Color del botón */
             color: #fff;
             text-decoration: none;
             border-radius: 5px;
+            transition: background 0.3s;
         }
 
         a:hover {
-            background-color: #45a049;
+            background-color: #1B6FA1; /* Color más oscuro en hover */
+        }
+
+        /* Estilo de cabecera y navegación */
+        header {
+            background-color: #336699; /* Azul más suave */
+            color: #fff;
+            padding: 15px 30px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
+        }
+
+        header .logo {
+            font-size: 1.5em;
+            font-weight: bold;
+            letter-spacing: 1px;
+            font-family: 'Playfair Display', serif; /* Letra elegante */
+        }
+
+        header nav ul {
+            list-style: none;
+            display: flex;
+            gap: 15px;
+            align-items: center;
+        }
+
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            padding: 8px 12px;
+            font-size: 1em;
+            border-radius: 5px;
+            transition: background 0.3s, color 0.3s;
+        }
+
+        header nav ul li a:hover {
+            background-color: #28577A; /* Azul oscuro para hover */
+            color: #fff;
         }
     </style>
 </head>
 <body>
+    <header>
+        <div class="logo">Podología Avanzada</div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#tratamientos">Tratamientos</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#testimonios">Testimonios</a></li>
+                <li><a href="#trabajos">Trabajos Realizados</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
 
     <div class="thank-you-container">
         <h1>¡Gracias por contactarnos!</h1>
