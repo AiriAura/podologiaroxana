@@ -75,44 +75,48 @@ header nav ul li a:hover {
     max-height: 80vh; /* Limitar la altura máxima de las imágenes */
 }
 
+.hero {
+    position: relative;
+    color: white; /* Color de texto por defecto */
+}
+
 .hero-content {
-    z-index: 2;
-    max-width: 600px; /* Ancho máximo del contenido del héroe */
-    text-align: center; /* Centrar el texto */
-    position: relative; /* Para que el contenido esté en el flujo normal */
-    margin-bottom: 20px; /* Espacio entre el encabezado y las imágenes */
+    position: absolute; /* Para superponer el contenido sobre las imágenes de fondo */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    z-index: 2; /* Asegura que el contenido esté sobre las imágenes */
 }
 
-.hero-content h1 {
-    font-size: 3.5em;
-    margin-bottom: 10px;
-    line-height: 1.2;
-    font-family: 'Playfair Display', serif; /* Letra elegante */
-    color: #d4e9f9; /* Azul claro para el título */
+.hero-title {
+    font-family: 'Arial Black', sans-serif; /* Fuente llamativa */
+    font-size: 4rem; /* Tamaño de fuente grande */
+    color: #f7e291; /* Color del título */
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* Sombra para mejorar legibilidad */
 }
 
-.hero-content p {
-    font-size: 1.2em;
-    margin-bottom: 20px;
+.hero-subtitle {
+    font-size: 1.5rem; /* Tamaño de fuente más grande para el párrafo */
+    margin: 10px 0 20px; /* Espaciado superior e inferior */
+    color: #f7e291; /* Un color dorado para que resalte */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); /* Sombra para legibilidad */
 }
 
 .btn {
-    position: relative; /* Asegúrate de que el botón esté en el flujo normal */
-    z-index: 3; /* Asegura que el botón esté por encima de las imágenes */
-    padding: 12px 30px;
-    background-color: #2A9DF4; /* Botón azul más brillante */
+    padding: 10px 20px;
+    background-color: #007BFF; /* Color del botón */
     color: white;
-    border: none;
+    text-decoration: none;
     border-radius: 5px;
-    cursor: pointer;
-    font-size: 1em;
-    transition: background 0.3s;
+    font-size: 1rem;
+    transition: background-color 0.3s ease; /* Efecto de transición */
 }
 
 .btn:hover {
-    background-color: #1B6FA1; /* Azul más oscuro para hover */
+    background-color: #0056b3; /* Color al pasar el ratón por encima */
 }
-
 .background-images {
     position: absolute;
     top: 0;
