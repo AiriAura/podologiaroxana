@@ -252,3 +252,56 @@ footer form button:hover {
 .whatsapp-link:hover {
     background-color: #128C7E; /* Color más oscuro al pasar el ratón */
 }
+.store-grid {
+    display: flex;                /* Usamos flexbox para alinear los productos horizontalmente */
+    flex-wrap: wrap;            /* Permite que los productos se envuelvan en caso de que no quepan en una sola fila */
+    justify-content: space-around; /* Espaciado uniforme entre los productos */
+    margin: 20px 0;             /* Espacio vertical alrededor de la sección */
+}
+
+.product {
+    flex: 1 1 200px;            /* Los productos se expanden para ocupar el espacio disponible, con un ancho base de 200px */
+    margin: 10px;               /* Espacio alrededor de cada producto */
+    text-align: center;         /* Centramos el texto dentro de cada producto */
+    border: 1px solid #ccc;     /* Borde ligero alrededor del producto */
+    border-radius: 8px;         /* Esquinas redondeadas para el producto */
+    padding: 15px;              /* Espacio interno dentro de cada producto */
+    background-color: #f9f9f9;  /* Color de fondo ligero para los productos */
+}
+
+.product img {
+    max-width: 100%;            /* Aseguramos que las imágenes no desborden su contenedor */
+    height: auto;               /* Mantiene la relación de aspecto */
+    border-radius: 8px;         /* Esquinas redondeadas para las imágenes */
+}
+.cart {
+    margin-top: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+}
+
+.cart-item h3 {
+    margin: 0;
+}
+
+#clear-cart {
+    background-color: red;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#clear-cart:hover {
+    background-color: darkred;
+}
